@@ -1,7 +1,5 @@
 .logo {
-  color: MediumAquamarine;
-  display: flex;
-  width: 735px;
+    display: flex;
   align-items: center;
   flex-grow: 1;
 padding-left: 30px;
@@ -26,23 +24,56 @@ header {
     height: 60px;
     margin-right: 12px;
   }
-nav {
-  display: inline-block;
-      width: 309px;
+
+  .logo span {
+    color: MediumAquamarine;
+    }
+  header nav {
+  width: 309px;
   padding-right: 40px;
   display: block;
   }
 
+  nav span {
+    display: inline-block;
+  padding: 20px 10px;
+}
+
+body {
+  margin: 0
+}
   a {
     color: black;
-  }
-  .lead-story .image-content {
+      }
+
+    .content {
+      display: flex;
+      width; 1232px;
+      margin: 0 auto 78px auto;
+      padding-top: 116px;
+    }
+
+    .column {
+      display: flex;
+      flex-direction: column;
+      margin-right: 32px;
+    }
+    .lead-story .image-content {
       background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-main.png);
       width: 630px;
       margin-top: 0px;
       font-size: 40px;
       text-align: left;
     }
+    .image-content {
+      height: 300px;
+      font-family: Georgia;
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+      }
+
     .fall-cancelled.image-content {
     background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-2.png);
 }
@@ -55,17 +86,23 @@ nav {
     background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-1.png);
 }
 
-.image-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 300px;
-    margin-top: 15px;
-    font-family: Georgia;
-    font-weight: bold;
-    font-size: 30px;
-    color: white;
-    text-align: center;
+.stories {
+  display: flex;
+  justify-content; space-between;
+  margin-top: 17px;
+}
+
+.stories .text-content {
+  height: 250px;
+}
+
+.story {display: flex;
+flex-direction: column;
+width: 300px;
+  }
+
+  .narrative {
+    margin-top: 16px;
   }
 
   .news-bites h3 {
@@ -86,15 +123,44 @@ nav {
 }
 .column.large {
   width: 630px;
-  display: flex;
-}
+  }
 
 .column.medium {
   width: 300px;
-  display: flex;
 }
 
 .column.small {
   width: 240px;
+  }
+
+footer {
+  background-color: MediumAquamarine;
   display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+width: 100%;
+height: 325px;
+margin: auto;
+font-family: Verdana;
+font-size: 12px;
 }
+
+footer .title {
+    display: inline-block;
+    padding-right: 25px;
+    border-right: 2px solid white;
+    font-family: Georgia;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+  }
+
+  footer nav {
+    display: inline-block;
+    padding-left: 25px;
+      }
+  div.copyright {
+    display: block;
+    width: auto;
+  }
